@@ -20,7 +20,7 @@ class Ttexts {
       'For seamless Transactions - Your Payment, Your Way!';
   static const String onBoardingSubtitle3 =
       'From Our Store to Your Door - Convenience Redefined!';
-
+  static const String onBoardingSubtitle4 = "from store to door";
   //--Home
   static const String homeTitle = 'Good day for shoppinng';
   static const String homeSubtitle = 'NajamUddin Asghar';
