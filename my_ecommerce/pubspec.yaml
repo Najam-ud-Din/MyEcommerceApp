@@ -39,6 +39,7 @@ dependencies:
   intl: ^0.18.0
   logger: ^1.1.0
   url_launcher: ^6.1.10
+  flutter_native_splash: ^2.4.6
 
   #Icons
   iconsax: ^0.0.8
