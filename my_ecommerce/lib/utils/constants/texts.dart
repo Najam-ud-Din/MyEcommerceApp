@@ -24,4 +24,5 @@ class Ttexts {
   //--Home
   static const String homeTitle = 'Good day for shoppinng';
   static const String homeSubtitle = 'NajamUddin Asghar';
+  static const String home1subtitle = 'Danish Asghar';
 }
