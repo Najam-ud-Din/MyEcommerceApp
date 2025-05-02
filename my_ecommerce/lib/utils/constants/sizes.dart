@@ -40,13 +40,13 @@ class Sizes {
   //divider height
   static const double dividerHeight = 1.0;
 
-  //Product items dimensions 
+  //Product items dimensions
   static const double productItemSize = 120.0;
   static const double productImageRadius = 16.0;
-  static const double productItemHeight= 160.0;
+  static const double productItemHeight = 160.0;
 
   //input field
-  static const double inputFieldRadius=  12.0;
+  static const double inputFieldRadius = 12.0;
   static const double spaceBtwInputField = 16.0;
 
   // card sizes
@@ -59,16 +59,9 @@ class Sizes {
   //Image carousel sizes
   static const double imageCarouselHeight = 200.0;
 
-  //Loader indicator sizes  
+  //Loader indicator sizes
   static const double loaderIndicatorSize = 36.0;
 
   //Grid view item sizes
   static const double gridViewpacing = 16.0;
-
-
-
-
-
-
-
- }
+}
