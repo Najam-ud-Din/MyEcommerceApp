@@ -15,7 +15,7 @@ class Ttexts {
   static const String onBoardingTitle3 = 'Deliver at your door step';
 
   static const String onBoardingSubtitle1 =
-      'Welcome to a world of LImitless Choices - Your Perfect Product Awaits!';
+      'Welcome to a world of Limitless Choices - Your Perfect Product Awaits!';
   static const String onBoardingSubtitle2 =
       'For seamless Transactions - Your Payment, Your Way!';
   static const String onBoardingSubtitle3 =

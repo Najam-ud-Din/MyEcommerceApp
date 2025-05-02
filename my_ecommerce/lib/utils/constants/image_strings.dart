@@ -14,5 +14,5 @@ class Timages {
   static const String onboardigImage2 =
       "assets/images/on_boarding_images/sammy-line-shopping.gif";
   static const String onboardigImage3 =
-      "assts/images/on_boarding_images/sammy-line-delivery.gif";
+      "assets/images/on_boarding_images/sammy-line-delivery.gif";
 }
