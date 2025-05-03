@@ -15,7 +15,7 @@ class OnBoardingDotNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = OnBoardingController.instance;
-    final dark = THelperFunctions.idDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: TDeviceUtility.getBottomNavigationBarHeight(context) + 30,
       left: Sizes.defaultSpacing,

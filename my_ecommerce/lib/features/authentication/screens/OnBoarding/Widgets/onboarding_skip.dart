@@ -24,7 +24,7 @@ class onboardingSkip extends StatelessWidget {
               'Skip',
               style: TextStyle(
                   fontSize: Sizes.mdFont,
-                  color: THelperFunctions.idDarkMode(context)
+                  color: (THelperFunctions.isDarkMode(context) == true)
                       ? Tcolors.white
                       : Tcolors.black),
             )));

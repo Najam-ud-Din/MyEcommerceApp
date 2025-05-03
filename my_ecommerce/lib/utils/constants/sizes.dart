@@ -35,7 +35,7 @@ class Sizes {
   //default spacing between sections
   static const double defaultSpacing = 24.0;
   static const double spacebtwItems = 16.0;
-  static const double dpacebtwsections = 32.0;
+  static const double spacebtwsections = 32.0;
 
   //divider height
   static const double dividerHeight = 1.0;

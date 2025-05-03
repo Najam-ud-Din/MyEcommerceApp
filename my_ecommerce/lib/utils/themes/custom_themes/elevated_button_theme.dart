@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_ecommerce/utils/constants/colors.dart';
 
 class TElevatedbuttonTheme {
   TElevatedbuttonTheme._();
@@ -7,12 +8,12 @@ class TElevatedbuttonTheme {
       ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      backgroundColor: Colors.white,
-      foregroundColor: Colors.blue,
+      backgroundColor: Tcolors.primaryColor,
+      foregroundColor: Tcolors.white,
       disabledBackgroundColor: Colors.grey,
       disabledForegroundColor: Colors.grey,
       side: BorderSide(
-        color: Colors.blue,
+        color: Tcolors.primaryColor,
       ),
       textStyle: TextStyle(
         fontSize: 16.0,
@@ -20,7 +21,7 @@ class TElevatedbuttonTheme {
         color: Colors.white,
       ),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(13),
       ),
       padding: const EdgeInsets.symmetric(vertical: 18.0),
     ),
@@ -30,12 +31,12 @@ class TElevatedbuttonTheme {
       ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      backgroundColor: Colors.white,
+      backgroundColor:  Tcolors.primaryColor,
       foregroundColor: Colors.blue,
       disabledBackgroundColor: Colors.grey,
       disabledForegroundColor: Colors.grey,
       side: BorderSide(
-        color: Colors.blue,
+        color: Tcolors.primaryColor,
       ),
       textStyle: TextStyle(
         fontSize: 16.0,

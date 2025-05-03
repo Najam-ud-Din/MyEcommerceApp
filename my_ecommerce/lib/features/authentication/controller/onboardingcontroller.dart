@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_ecommerce/features/authentication/screens/Login/Loginscreen.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
@@ -25,7 +26,7 @@ class OnBoardingController extends GetxController {
   //update currentindex and jump to the next page
   void nextpage() {
     if (currentPageIndex.value == 2) {
-      //Get.to(LoginScreen());
+      Get.to(LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pagecontroller.jumpToPage(page);

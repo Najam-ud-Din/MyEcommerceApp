@@ -13,7 +13,7 @@ class OnBoardingNextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.idDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Positioned(
         right: Sizes.defaultSpacing,
         bottom: TDeviceUtility.getBottomNavigationBarHeight(context) + 20,
