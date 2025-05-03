@@ -8,4 +8,6 @@ class TSpacingStyle {
     bottom: Sizes.defaultSpacing,
     right: Sizes.defaultSpacing,
   );
+
+  static var defaultSpacing;
 }

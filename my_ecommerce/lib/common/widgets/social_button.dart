@@ -3,8 +3,8 @@ import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/image_strings.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
 
-class footerwidget extends StatelessWidget {
-  const footerwidget({
+class SocialButton extends StatelessWidget {
+  const SocialButton({
     super.key,
     required this.images,
   });

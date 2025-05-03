@@ -48,7 +48,7 @@ class Ttexts {
   //..Authentication Screen Titles and Subtitles
   static const String loginTitle = "Welcome Back";
   static const String loginSubTitle = "Sign in to continue";
-  static const String signupTitle = "Create Your Account";
+  static const String signupTitle = "Let's create your account";
   static const String forgetpasswordTitle = "Forgot Password";
   static const String forgetpasswordSubTitle =
       "Enter your email to receive password reset instructions";

@@ -3,8 +3,11 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/get_utils/get_utils.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:my_ecommerce/common/styles/spacingstyles.dart';
-import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/footerwidget.dart';
+import 'package:my_ecommerce/common/widgets/social_button.dart';
+import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/loginform.dart';
 import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/loginheader.dart';
+import 'package:my_ecommerce/common/widgets/formDivider.dart';
+import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/loginpagefooter.dart';
 import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/textfromfield.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/image_strings.dart';
@@ -30,121 +33,15 @@ class LoginScreen extends StatelessWidget {
                 height: Sizes.sm,
               ),
               //Form
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: Sizes.spacebtwsections),
-                child: Form(
-                    child: Column(
-                  children: [
-                    ///Email
-                    CustomTextFormField(
-                      icon: Iconsax.sms,
-                      labelText: Ttexts.email,
-                    ),
-                    SizedBox(
-                      height: Sizes.spaceBtwInputField,
-                    ),
-                    CustomTextFormField(
-                      labelText: Ttexts.password,
-                      icon: Iconsax.password_check,
-                      suffixIcon: Iconsax.eye_slash,
-                    ),
-                    SizedBox(
-                      height: Sizes.spaceBtwInputField / 2,
-                    ),
-                    //remember me and forget password
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            Checkbox(
-                                activeColor: Tcolors.primaryColor,
-                                value: true,
-                                onChanged: (value) {}),
-                            Text(
-                              Ttexts.rememberme,
-                            ),
-                          ],
-                        ),
-
-                        //forgetpassword
-                        TextButton(
-                            onPressed: () {},
-                            child: Text(Ttexts.forgetpassword))
-                      ],
-                    ),
-
-                    SizedBox(
-                      height: Sizes.spacebtwItems,
-                    ),
-
-                    ///signinbutton
-                    SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              Ttexts.signin,
-                              style: TextStyle(color: Tcolors.white),
-                            ))),
-                    SizedBox(
-                      height: Sizes.spacebtwItems,
-                    ),
-
-                    ///createaccountbutton
-                    SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              Ttexts.createAccount,
-                              style: TextStyle(color: Tcolors.white),
-                            ))),
-                  ],
-                )),
-              ),
+              loginform(),
 
               ///Divider
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Flexible(
-                    child: Divider(
-                      color: dark ? Tcolors.darkgrey : Tcolors.grey,
-                      thickness: 0.5,
-                      indent: 60.0,
-                      endIndent: 5,
-                    ),
-                  ),
-                  Text(
-                    Ttexts.orsigninwith.capitalize!,
-                    style: Theme.of(context).textTheme.labelMedium,
-                  ),
-                  Flexible(
-                    child: Divider(
-                      color: dark ? Tcolors.darkgrey : Tcolors.grey,
-                      thickness: 0.5,
-                      indent: 5,
-                      endIndent: 60.0,
-                    ),
-                  ),
-                ],
-              ),
+              Formdivider(dark: dark),
               SizedBox(
                 height: Sizes.spacebtwItems,
               ),
               //Footer
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  footerwidget(images: Timages.google),
-                  SizedBox(
-                    width: Sizes.spacebtwItems,
-                  ),
-                  footerwidget(images: Timages.facebook),
-                ],
-              )
+              Loginpagefooter(),
             ],
           ),
         ),
