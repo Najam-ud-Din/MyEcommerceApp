@@ -14,6 +14,11 @@ class Ttexts {
   static const String onBoardingTitle2 = 'Select payment method';
   static const String onBoardingTitle3 = 'Deliver at your door step';
 
+  //bottomnavigation
+  static const String store = "Store";
+  static const String wishlist = "WishList";
+  static const String Profile = "Profile";
+
   static const String onBoardingSubtitle1 =
       'Welcome to a world of Limitless Choices - Your Perfect Product Awaits!';
   static const String onBoardingSubtitle2 =

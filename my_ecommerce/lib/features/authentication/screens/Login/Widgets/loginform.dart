@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/textfromfield.dart';
 import 'package:my_ecommerce/features/authentication/screens/Passwordconfiguration/forget_password.dart';
 import 'package:my_ecommerce/features/authentication/screens/SignUp/signupscreen.dart';
+import 'package:my_ecommerce/navigation_menu.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
 import 'package:my_ecommerce/utils/constants/texts.dart';
@@ -70,7 +71,9 @@ class loginform extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(NavigationMenu());
+                  },
                   child: Text(
                     Ttexts.signin,
                     style: TextStyle(color: Tcolors.white),

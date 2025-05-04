@@ -20,6 +20,9 @@ class Sizes {
   static const double mdFont = 16.0;
   static const double lgFont = 18.0;
 
+  //bold fonts
+  static const FontWeight bold = FontWeight.bold;
+
   //Botton sizes
   static const double buttonHeight = 18.0;
   static const double buttonWidth = 120.0;
@@ -64,4 +67,7 @@ class Sizes {
 
   //Grid view item sizes
   static const double gridViewpacing = 16.0;
+
+  //bottom navigation bar item
+  static const double bottomnavigationbarheight = 70.0;
 }

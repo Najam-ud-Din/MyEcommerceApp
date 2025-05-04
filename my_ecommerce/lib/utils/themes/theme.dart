@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_ecommerce/utils/themes/custom_themes/anvigationbartheme.dart';
 import 'package:my_ecommerce/utils/themes/custom_themes/appbar_theme.dart';
 import 'package:my_ecommerce/utils/themes/custom_themes/checkBoxTheme.dart';
 import 'package:my_ecommerce/utils/themes/custom_themes/chipTheme.dart';
@@ -21,23 +22,25 @@ class TApptheme {
     outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: TtextFormFieldTheme.lightInputDecorationTheme,
     elevatedButtonTheme: TElevatedbuttonTheme.lightElevatedButtonTheme,
+    navigationBarTheme: Tnavigationbartheme.lightnavigationbartheme,
     useMaterial3: true,
   );
 
   static ThemeData darkTheme = ThemeData(
-    useMaterial3: true,
-    fontFamily: 'Poppins',
-    brightness: Brightness.light,
-    primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
-    textTheme: TTextTheme.darktextTheme,
-    chipTheme: Chiptheme.darkChipTheme,
-    appBarTheme: Tappbartheme.darkappbartheme,
-    checkboxTheme: CheckBoxTheme.darkCheckBoxTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: TtextFormFieldTheme.darkInputDecorationTheme,
-    elevatedButtonTheme: TElevatedbuttonTheme.darkElevatedButtonTheme,
-    // textButtonTheme: TTextButtonTheme.darkTextButtonTheme,
-    // textTheme: TTextTheme.darktextTheme,
-  );
+      useMaterial3: true,
+      fontFamily: 'Poppins',
+      brightness: Brightness.light,
+      primaryColor: Colors.blue,
+      scaffoldBackgroundColor: Colors.black,
+      textTheme: TTextTheme.darktextTheme,
+      chipTheme: Chiptheme.darkChipTheme,
+      appBarTheme: Tappbartheme.darkappbartheme,
+      checkboxTheme: CheckBoxTheme.darkCheckBoxTheme,
+      outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+      inputDecorationTheme: TtextFormFieldTheme.darkInputDecorationTheme,
+      elevatedButtonTheme: TElevatedbuttonTheme.darkElevatedButtonTheme,
+      navigationBarTheme: Tnavigationbartheme.darknavigationbartheme
+      // textButtonTheme: TTextButtonTheme.darkTextButtonTheme,
+      // textTheme: TTextTheme.darktextTheme,
+      );
 }
