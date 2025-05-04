@@ -36,7 +36,7 @@ class LoginScreen extends StatelessWidget {
               loginform(),
 
               ///Divider
-              Formdivider(dark: dark),
+              Formdivider(dividertxt: Ttexts.orsigninwith, dark: dark),
               SizedBox(
                 height: Sizes.spacebtwItems,
               ),

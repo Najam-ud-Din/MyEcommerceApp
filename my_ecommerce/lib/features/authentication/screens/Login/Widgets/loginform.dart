@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/textfromfield.dart';
+import 'package:my_ecommerce/features/authentication/screens/Passwordconfiguration/forget_password.dart';
 import 'package:my_ecommerce/features/authentication/screens/SignUp/signupscreen.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
 import 'package:my_ecommerce/utils/constants/texts.dart';
+import 'package:my_ecommerce/utils/helpers/helperfunction.dart';
 
 class loginform extends StatelessWidget {
   const loginform({
@@ -52,7 +54,11 @@ class loginform extends StatelessWidget {
               ),
 
               //forgetpassword
-              TextButton(onPressed: () {}, child: Text(Ttexts.forgetpassword))
+              TextButton(
+                  onPressed: () {
+                    Get.to(ForgetPassword());
+                  },
+                  child: Text(Ttexts.forgetpassword))
             ],
           ),
 
@@ -77,12 +83,21 @@ class loginform extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: THelperFunctions.isDarkMode(context)
+                        ? Tcolors.dark
+                        : Tcolors.white,
+                  ),
                   onPressed: () {
                     Get.to(const Signupscreen());
                   },
                   child: Text(
                     Ttexts.createAccount,
-                    style: TextStyle(color: Tcolors.white),
+                    style: TextStyle(
+                      color: THelperFunctions.isDarkMode(context)
+                          ? Tcolors.white
+                          : Tcolors.black,
+                    ),
                   ))),
         ],
       )),

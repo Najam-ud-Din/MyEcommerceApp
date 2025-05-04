@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:my_ecommerce/common/styles/spacingstyles.dart';
-import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/textfromfield.dart';
+import 'package:my_ecommerce/common/widgets/formDivider.dart';
+import 'package:my_ecommerce/common/widgets/social_button.dart';
+import 'package:my_ecommerce/features/authentication/screens/Login/Widgets/loginpagefooter.dart';
 import 'package:my_ecommerce/features/authentication/screens/SignUp/Widgets/customfieldforsignup.dart';
+import 'package:my_ecommerce/features/authentication/screens/SignUp/Widgets/tsignupform.dart';
+import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
 import 'package:my_ecommerce/utils/constants/texts.dart';
+import 'package:my_ecommerce/utils/helpers/helperfunction.dart';
 
 class Signupscreen extends StatelessWidget {
   const Signupscreen({super.key});
@@ -28,32 +33,19 @@ class Signupscreen extends StatelessWidget {
               ),
 
               ///form
-              Form(
-                  child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Customtextfield(
-                          expand: false,
-                          labelText: Ttexts.firstname,
-                          prefixIcon: Iconsax.user,
-                        ),
-                      ),
-                      SizedBox(
-                        width: Sizes.spaceBtwInputField,
-                      ),
-                      Expanded(
-                        child: Customtextfield(
-                          expand: false,
-                          labelText: Ttexts.lastname,
-                          prefixIcon: Iconsax.user,
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ))
+              Tsignupform(),
+              SizedBox(
+                height: Sizes.spacebtwsections,
+              ),
+
+              ///Divider
+              Formdivider(
+                  dividertxt: Ttexts.orSignUpwith,
+                  dark: THelperFunctions.isDarkMode(context)),
+              SizedBox(
+                height: Sizes.spacebtwsections,
+              ),
+              Loginpagefooter(),
             ],
           ),
         ),

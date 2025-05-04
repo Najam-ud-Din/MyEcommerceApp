@@ -8,16 +8,18 @@ class Customtextfield extends StatelessWidget {
       required this.labelText,
       required this.prefixIcon,
       this.suffixIcon,
-      required this.expand});
+      required this.expand,
+      this.obscuretext = false});
 
   final String labelText;
   final IconData? prefixIcon, suffixIcon;
   final bool expand;
-
+  final bool obscuretext;
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return TextFormField(
+      obscureText: obscuretext,
       expands: expand,
       decoration: InputDecoration(
         focusedBorder: OutlineInputBorder(
