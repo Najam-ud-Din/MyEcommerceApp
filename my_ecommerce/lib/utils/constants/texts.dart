@@ -28,6 +28,8 @@ class Ttexts {
   static const String onBoardingSubtitle4 = "from store to door";
   //--Home
   static const String homeTitle = 'Good day for shoppinng';
+  static const String homeappbartitle = "Good day for shopping";
+  static const String homeappbarsubtitle = "NajamUdDin";
 
   //..Authentication Form text
   static const String firstname = "First Name";

@@ -39,7 +39,8 @@ class Tcolors {
   static const Color lightgrey = Color(0xFFF9F9F9);
   static const Color white = Color(0xFFFFFFFF);
 
-
+//transparent
+  static const Color transparent = Colors.transparent;
 
   //Gradient Colors
   static const Gradient linearGradient = LinearGradient(
