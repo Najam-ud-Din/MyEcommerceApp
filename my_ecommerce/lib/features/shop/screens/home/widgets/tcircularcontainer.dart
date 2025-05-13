@@ -9,7 +9,7 @@ class Tcircularcontainer extends StatelessWidget {
     this.radius = 400,
     this.padding = 0,
     this.child,
-    this.baclgroundColor = Tcolors.white,
+    this.backgroundColor = Tcolors.white,
   });
 
   final double? width;
@@ -17,7 +17,7 @@ class Tcircularcontainer extends StatelessWidget {
   final double radius;
   final double padding;
   final Widget? child;
-  final Color baclgroundColor;
+  final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {

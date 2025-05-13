@@ -31,4 +31,34 @@ class Timages {
       "assets/images/animations/sammy-line-man-receives-a-mail.png";
   static const String verifyIllustration =
       "assets/images/animations/sammy-line-travel-backpack-with-password-and-air-ticket.gif";
+
+  //category Icons
+  static const String sportIcon =
+      'assets/icons/categories/icons8-bowling-64.png';
+
+  static const String clothicon =
+      'assets/icons/categories/icons8-tailors-dummy-64.png';
+
+  static const String shoeicon = 'assets/icons/categories/icons8-shoes-64.png';
+  static const String cosmeticsIcon =
+      'assets/icons/categories/icons8-cosmetics-64.png';
+  static const String animation =
+      'assets/icons/categories/icons8-dog-heart-64.png';
+  static const String toyicon =
+      'assets/icons/categories/icons8-wooden-toy-car-64.png';
+
+  static const String furnitureIcon =
+      'assets/icons/categories/icons8-dining-chair-64.png';
+
+  static const String jeweleryIcon =
+      'assets/icons/categories/icons8-sparkling-dimond-64.png';
+
+  //banners
+  static const String Banner1 = 'assets/images/banners/banner_1.jpg';
+  static const String Banner2 = 'assets/images/banners/banner_2.jpg';
+  static const String Banner3 = 'assets/images/banners/banner_3.jpg';
+  static const String Banner4 = 'assets/images/banners/banner_4.jpg';
+  static const String Banner5 = 'assets/images/banners/banner_5.jpg';
+  static const String Banner6 = 'assets/images/banners/banner_6.jpg';
+  static const String Banner7 = 'assets/images/banners/banner_7.jpg';
 }
