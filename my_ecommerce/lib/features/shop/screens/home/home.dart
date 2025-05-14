@@ -82,7 +82,9 @@ class HomeScreen extends StatelessWidget {
                         Timages.Banner7
                       ],
                     ),
-
+                    SizedBox(
+                      height: Sizes.spacebtwsections,
+                    ),
                     //--popular products --tutorial
                     TproductCardVertical(),
                   ],
