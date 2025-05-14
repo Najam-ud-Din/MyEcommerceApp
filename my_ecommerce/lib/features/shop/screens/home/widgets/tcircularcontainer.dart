@@ -9,12 +9,14 @@ class Tcircularcontainer extends StatelessWidget {
     this.radius = 400,
     this.padding = 0,
     this.child,
-    this.backgroundColor = Tcolors.white,
+    this.backgroundColor = Tcolors.textWhite,
+    this.margin,
   });
 
   final double? width;
   final double? height;
   final double radius;
+  final EdgeInsets? margin;
   final double padding;
   final Widget? child;
   final Color backgroundColor;
@@ -22,14 +24,14 @@ class Tcircularcontainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: margin,
       width: width,
       height: height,
       padding: EdgeInsets.all(0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(radius),
-        // ignore: deprecated_member_use
-        color: Tcolors.textWhite.withOpacity(0.1),
-      ),
+          borderRadius: BorderRadius.circular(radius),
+          // ignore: deprecated_member_use
+          color: backgroundColor),
       child: child,
     );
   }

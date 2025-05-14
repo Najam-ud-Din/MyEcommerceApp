@@ -3,12 +3,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_ecommerce/common/widgets/Troundimage.dart';
 import 'package:my_ecommerce/common/widgets/Tverticalcateimagetext.dart';
+import 'package:my_ecommerce/common/widgets/products/product_cards/prodcut_card_vertical.dart';
 import 'package:my_ecommerce/common/widgets/search_container.dart';
 import 'package:my_ecommerce/common/widgets/sectionheading.dart';
 import 'package:my_ecommerce/features/shop/screens/home/widgets/t_home_bar.dart';
 import 'package:my_ecommerce/features/shop/screens/home/widgets/t_homecategories.dart';
 import 'package:my_ecommerce/features/shop/screens/home/widgets/tcircularcontainer.dart';
 import 'package:my_ecommerce/features/shop/screens/home/widgets/tprimary_header_container.dart';
+import 'package:my_ecommerce/features/shop/screens/home/widgets/tpromoslider.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/image_strings.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
@@ -69,29 +71,20 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(Sizes.defaultSpacing),
                 child: Column(
                   children: [
-                    CarouselSlider(
-                        items: [
-                          Troundedimage(
-                            imageurl: Timages.Banner1,
-                          ),
-                          Troundedimage(
-                            imageurl: Timages.Banner2,
-                          ),
-                          Troundedimage(
-                            imageurl: Timages.Banner3,
-                          ),
-                        ],
-                        options: CarouselOptions(
-                          viewportFraction: 1.0,
-                        )),
-                    const SizedBox(
-                      height: Sizes.spacebtwItems,
+                    Tpromoslider(
+                      banners: [
+                        Timages.Banner1,
+                        Timages.Banner2,
+                        Timages.Banner3,
+                        Timages.Banner4,
+                        Timages.Banner5,
+                        Timages.Banner6,
+                        Timages.Banner7
+                      ],
                     ),
-                    Tcircularcontainer(
-                      width: 20,
-                      height: 20,
-                      backgroundColor: Colors.green,
-                    ),
+
+                    //--popular products --tutorial
+                    TproductCardVertical(),
                   ],
                 )),
           ],

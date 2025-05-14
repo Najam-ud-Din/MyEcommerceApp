@@ -21,8 +21,18 @@ class TprimaryHeaderContainer extends StatelessWidget {
           child: Stack(
             children: [
               //circlar container
-              Positioned(top: -150, right: -250, child: Tcircularcontainer()),
-              Positioned(top: 100, right: -300, child: Tcircularcontainer()),
+              Positioned(
+                  top: -150,
+                  right: -250,
+                  child: Tcircularcontainer(
+                    backgroundColor: Tcolors.textWhite.withOpacity(0.1),
+                  )),
+              Positioned(
+                  top: 100,
+                  right: -300,
+                  child: Tcircularcontainer(
+                    backgroundColor: Tcolors.textWhite.withOpacity(0.1),
+                  )),
               child,
             ],
           ),

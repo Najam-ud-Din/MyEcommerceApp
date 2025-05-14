@@ -6,7 +6,8 @@ import 'package:my_ecommerce/utils/constants/texts.dart';
 class Formdivider extends StatelessWidget {
   const Formdivider({
     super.key,
-    required this.dark, required this.dividertxt,
+    required this.dark,
+    required this.dividertxt,
   });
 
   final bool dark;
