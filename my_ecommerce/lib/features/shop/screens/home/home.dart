@@ -1,8 +1,11 @@
+import 'dart:io';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_ecommerce/common/widgets/Troundimage.dart';
 import 'package:my_ecommerce/common/widgets/Tverticalcateimagetext.dart';
+import 'package:my_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:my_ecommerce/common/widgets/products/product_cards/prodcut_card_vertical.dart';
 import 'package:my_ecommerce/common/widgets/search_container.dart';
 import 'package:my_ecommerce/common/widgets/sectionheading.dart';
@@ -86,7 +89,15 @@ class HomeScreen extends StatelessWidget {
                       height: Sizes.spacebtwsections,
                     ),
                     //--popular products --tutorial
-                    TproductCardVertical(),
+                    //gridlayout
+                    Gridlayout(
+                      itemcount: 8,
+                      itemBuilder: (_, index) => TproductCardVertical(),
+                    ),
+
+                    const SizedBox(
+                      height: Sizes.spaceBtwInputField,
+                    ),
                   ],
                 )),
           ],
