@@ -88,6 +88,16 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(
                       height: Sizes.spacebtwsections,
                     ),
+
+                    ///-Heading
+                    TSectionHeading(
+                      title: "Popular Products",
+                      onPressed: () {},
+                      showActionbutton: true,
+                    ),
+                    SizedBox(
+                      height: Sizes.spacebtwsections / 2,
+                    ),
                     //--popular products --tutorial
                     //gridlayout
                     Gridlayout(

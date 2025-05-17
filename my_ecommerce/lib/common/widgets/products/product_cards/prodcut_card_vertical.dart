@@ -112,36 +112,43 @@ class TproductCardVertical extends StatelessWidget {
                       )
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Tproductpricetext(
-                        currencysign: '\$',
-                        price: '34.4',
-                      ),
+                ],
+              ),
+            ),
 
-                      //Add to cart button
-                      Container(
-                        decoration: BoxDecoration(
-                            color: Tcolors.dark,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(Sizes.cardradiusMd),
-                              bottomRight:
-                                  Radius.circular(Sizes.productImageRadius),
-                            )),
-                        child: SizedBox(
-                          width: Sizes.lgIcon * 1.2,
-                          height: Sizes.lgIcon * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: Tcolors.white,
-                            ),
-                          ),
+            ///Add spacer() here to keep the height of each box same
+            Spacer(),
+
+            Padding(
+              padding: const EdgeInsets.only(left: Sizes.sm),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Tproductpricetext(
+                    currencysign: '\$',
+                    price: '34.4',
+                  ),
+
+                  //Add to cart button
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Tcolors.dark,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(Sizes.cardradiusMd),
+                          bottomRight:
+                              Radius.circular(Sizes.productImageRadius),
+                        )),
+                    child: SizedBox(
+                      width: Sizes.lgIcon * 1.2,
+                      height: Sizes.lgIcon * 1.2,
+                      child: Center(
+                        child: Icon(
+                          Iconsax.add,
+                          color: Tcolors.white,
                         ),
                       ),
-                    ],
-                  )
+                    ),
+                  ),
                 ],
               ),
             ),

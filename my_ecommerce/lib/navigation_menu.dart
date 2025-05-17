@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:my_ecommerce/features/shop/screens/Store/store.dart';
 import 'package:my_ecommerce/features/shop/screens/home/home.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
@@ -44,7 +45,7 @@ class NavigationMenu extends StatelessWidget {
                   selectedIndex: controller.selectedIndex,
                   onDestinationSelected: (index) =>
                       controller.setselectedindex(index),
-                      backgroundColor: Colors.transparent,
+                  backgroundColor: Colors.transparent,
                   //backgroundColor: darkMode ? Tcolors.black : Tcolors.white,
                   indicatorColor: darkMode
                       ? Tcolors.white.withValues(
@@ -117,9 +118,7 @@ class NavigationController extends GetxController {
   // screens of the navigation buttons
   List<Widget> screens = [
     HomeScreen(),
-    Container(
-      color: Colors.green,
-    ),
+    StoreScreen(),
     Container(
       color: Colors.yellow,
     ),
