@@ -13,17 +13,19 @@ class TSearchContainer extends StatelessWidget {
     this.icon = Iconsax.search_normal,
     this.showbackground = true,
     this.showborder = true,
+    this.padding = const EdgeInsets.symmetric(horizontal: Sizes.defaultSpacing),
   });
 
   final String text;
   final IconData? icon;
   final bool showbackground, showborder;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: Sizes.defaultSpacing),
+      padding: padding,
       child: Container(
         width: TDeviceUtility.getscreenWidth(context),
         padding: EdgeInsets.all(Sizes.md),

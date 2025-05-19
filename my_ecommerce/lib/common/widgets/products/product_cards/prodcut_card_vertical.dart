@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:my_ecommerce/common/widgets/TbrandtitlewithVerificatoinIcon.dart';
 import 'package:my_ecommerce/common/widgets/Troundedcontainer.dart';
-import 'package:my_ecommerce/common/widgets/Troundimage.dart';
+import 'package:my_ecommerce/common/widgets/images/Troundimage.dart';
 import 'package:my_ecommerce/common/widgets/icons/t_circular_icons.dart';
 import 'package:my_ecommerce/common/widgets/texts/product_title_text.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
@@ -94,23 +95,8 @@ class TproductCardVertical extends StatelessWidget {
                   SizedBox(
                     height: Sizes.spacebtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(
-                        width: Sizes.xs,
-                      ),
-                      Icon(
-                        Iconsax.verify5,
-                        color: Tcolors.primaryColor,
-                        size: Sizes.xsIcon,
-                      )
-                    ],
+                  TbrandtitlewithverificationIcon(
+                    title: 'Nike',
                   ),
                 ],
               ),

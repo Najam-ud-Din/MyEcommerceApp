@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_ecommerce/common/widgets/Troundimage.dart';
+import 'package:my_ecommerce/common/widgets/images/Troundimage.dart';
 import 'package:my_ecommerce/features/shop/controllers/homecontrollers.dart';
 import 'package:my_ecommerce/features/shop/screens/home/widgets/tcircularcontainer.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
