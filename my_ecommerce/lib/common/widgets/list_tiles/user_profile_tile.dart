@@ -7,9 +7,9 @@ import 'package:my_ecommerce/utils/constants/image_strings.dart';
 class TUserProfileTile extends StatelessWidget {
   const TUserProfileTile({
     super.key,
+    this.onpressed,
   });
-
-  
+  final VoidCallback? onpressed;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class TUserProfileTile extends StatelessWidget {
       title: Text('NajamUdDin',
           style: Theme.of(context)
               .textTheme
-              .headlineSmall!
+              .titleMedium!
               .apply(color: Tcolors.white)),
       subtitle: Text('najamuddin9823@gmail.com',
           style: Theme.of(context)
@@ -26,7 +26,7 @@ class TUserProfileTile extends StatelessWidget {
               .bodyMedium!
               .apply(color: Tcolors.white)),
       trailing: IconButton(
-          onPressed: () {},
+          onPressed: onpressed,
           icon: Icon(
             Iconsax.edit,
             color: Tcolors.white,
