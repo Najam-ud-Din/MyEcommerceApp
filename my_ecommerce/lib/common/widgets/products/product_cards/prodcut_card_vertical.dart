@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:my_ecommerce/common/widgets/TbrandtitlewithVerificatoinIcon.dart';
+import 'package:my_ecommerce/common/widgets/texts/TbrandtitlewithVerificatoinIcon.dart';
 import 'package:my_ecommerce/common/widgets/Troundedcontainer.dart';
 import 'package:my_ecommerce/common/widgets/images/Troundimage.dart';
 import 'package:my_ecommerce/common/widgets/icons/t_circular_icons.dart';
