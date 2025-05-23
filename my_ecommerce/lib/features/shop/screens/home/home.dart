@@ -62,9 +62,12 @@ class HomeScreen extends StatelessWidget {
                         //Scrollable categories
                         //using listview.builder here
                         THomecategories(),
+                        SizedBox(
+                          height: Sizes.spacebtwsections,
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

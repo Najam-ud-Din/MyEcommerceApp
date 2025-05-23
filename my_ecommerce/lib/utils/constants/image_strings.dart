@@ -62,6 +62,9 @@ class Timages {
   static const String Banner6 = 'assets/images/banners/banner_6.jpg';
   static const String Banner7 = 'assets/images/banners/banner_7.jpg';
 
+  //profile
+  static const String user = "assets/user/profile.png";
+
   //--products
   static const String Productimage1 = 'assets/images/products/nike-shoes.png';
   static const String Productimage2 = 'assets/images/products/product-1.png';

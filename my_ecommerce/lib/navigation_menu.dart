@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:my_ecommerce/features/personalization/screens/settings/settings.dart';
 import 'package:my_ecommerce/features/shop/screens/Store/store.dart';
+import 'package:my_ecommerce/features/shop/screens/Wishlist/wilshlist.dart';
 import 'package:my_ecommerce/features/shop/screens/home/home.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
@@ -119,11 +121,7 @@ class NavigationController extends GetxController {
   List<Widget> screens = [
     HomeScreen(),
     StoreScreen(),
-    Container(
-      color: Colors.yellow,
-    ),
-    Container(
-      color: Colors.blue,
-    ),
+    FavouriteScreen(),
+    SettingScreen(),
   ];
 }
