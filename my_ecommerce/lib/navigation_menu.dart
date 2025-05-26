@@ -6,6 +6,7 @@ import 'package:my_ecommerce/features/personalization/screens/settings/settings.
 import 'package:my_ecommerce/features/shop/screens/Store/store.dart';
 import 'package:my_ecommerce/features/shop/screens/Wishlist/wilshlist.dart';
 import 'package:my_ecommerce/features/shop/screens/home/home.dart';
+import 'package:my_ecommerce/features/shop/screens/product_details/product_details.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 import 'package:my_ecommerce/utils/constants/sizes.dart';
 import 'package:my_ecommerce/utils/constants/texts.dart';
@@ -122,6 +123,6 @@ class NavigationController extends GetxController {
     HomeScreen(),
     StoreScreen(),
     FavouriteScreen(),
-    SettingScreen(),
+    ProductDetails(),
   ];
 }
